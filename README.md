@@ -32,9 +32,11 @@ This code would benefit from updating to ES2015 style — there are lots of plac
 
 ## Step Three: makeBoard
 
-The makeBoard() function needs to be implemented. It should set the global board variable to be an array of 6 arrays (height), each containing 7 items (width).
+The **makeBoard()** function needs to be implemented. It should set the global board variable to be an array of 6 arrays (height), each containing 7 items (width).
 
 You could do this like:
+
+```JavaScript
 
 const board = [
   [ null, null, null, null, null, null, null ],
@@ -44,6 +46,8 @@ const board = [
   [ null, null, null, null, null, null, null ],
   [ null, null, null, null, null, null, null ],
 ];
+
+```
 
 However, it’s far better to make the game flexible about the height and width of the board and use the WIDTH and HEIGHT constants in connect4.js. Implement this function to make this board dynamically.
 
