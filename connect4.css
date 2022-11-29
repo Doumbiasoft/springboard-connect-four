@@ -1,13 +1,12 @@
 /* game board table */
 * {
   padding: 0;
-  margin: 0;
+  margin: auto;
   box-sizing: border-box;
-}
-body {
   align-items: center;
   text-align: center;
 }
+
 table {
   border-spacing: 10px;
   border-collapse: separate;
@@ -55,8 +54,8 @@ table {
   height: 90%; */
   border-radius: 50%;
   padding: 3px;
-  width: 54px;
-  height: 54px;
+  width: 65px;
+  height: 65px;
   position: absolute;
   margin-top: -31px;
   margin-left: -1.5px;
