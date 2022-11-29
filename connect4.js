@@ -138,9 +138,9 @@ function handleClick(evt) {
   // check for tie
   // TODO: check if all cells in board are filled; if so call, call endGame
   if (board.every(row => row.every(cell => cell))) {
-    divMessage.innerHTML = 'Tie!';
+    divMessage.innerHTML = 'The game is a draw!';
     resetBtn.classList.remove('hidden');
-    return endGame('Tie!');
+    return endGame('The game is a draw!');
   }
 
   // switch players
