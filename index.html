@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4</title>
+    <link href="connect4.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td>
+          <div>
+            <img src="images/springboard.png" width="180" alt="Springboard" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><h2> Connect 4 Game !</h2></td>
+      </tr>
+    </table>
+    <div id="game">
+      <table id="board"></table>
+    </div>
+    <di>
+      <table align="center">
+        <tr>
+          <td><div class="divLegendRed"></div></td>
+          <td><label>Player One</label></td>
+        </tr>
+        <tr>
+          <td><div class="divLegendBlue"></div></td>
+          <td><label>Player Two</label></td>
+        </tr>
+      </table>
+      <table align="center">
+        <tr>
+          <td>
+            <h2><div id="divMessage"></div></h2>
+          </td>
+        </tr>
+        <tr>
+          <td><input id="resetBtn" class="hidden" style="cursor: pointer;" type="button" value=" Reset game ! " /></td>
+        </tr>
+      </table>
+    </di>
+    <script src="connect4.js"></script>
+  </body>
+</html>
