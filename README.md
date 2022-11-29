@@ -74,7 +74,9 @@ There are several pieces to write/fix here:
 this never updates the board variable with the player #. Fix.
 add a check for “is the entire board filled” [hint: the JS every method on arrays would be especially nice here!]
 add code to switch currPlayer between 1 and 2. This would be a great place for a ternary function.
-Step Seven: findSpotForCol and endGame
+
+## Step Seven: findSpotForCol and endGame
+
 Right now, the game drops always drops a piece to the top of the column, even if a piece is already there. Fix this function so that it finds the lowest empty spot in the game board and returns the y coordinate (or null if the column is filled).
 
 Once you have this working, make sure that when a game has ended, the endGame function runs and alerts which user has won!
@@ -83,9 +85,10 @@ Once you have this working, make sure that when a game has ended, the endGame fu
 
 If you got this far, you should have a fully functional Connect Four game. Congratulations!
 
-## Further Study
+**Further Study**
 
-Optional Step Nine: Read & Comment checkForWin
+## Optional Step Nine: Read & Comment checkForWin
+
 The checkForWin() function is already written, but it needs comments to help explain how it works. Add some!
 
 **Note:** this is a good strategy for finding a winner, but it’s not the most efficient. Later, you may learn ways to find winners that don’t keep re-checking the same area of the board [using techniques for “dynamic programming”, you can make this code more efficient, though it’s much more advanced than the rest of this exercise. You can come back to this code much later!]
