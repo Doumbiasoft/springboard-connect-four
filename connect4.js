@@ -104,8 +104,15 @@ function placeInTable(y, x) {
 
 function endGame(msg) {
   // TODO: pop up alert message
-  alert(msg);
+  const messageTimer = setTimeout(() => {
+    divMessage.innerHTML = msg;
+    resetBtn.classList.remove('hidden');
+    //alert(msg);
+  }, 600);
+  //clearTimeout(messageTimer);
 }
+
+
 
 /** handleClick: handle click of column top to play piece */
 
@@ -128,16 +135,13 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
-    divMessage.innerHTML = `Player ${currPlayer} won!`;
-    resetBtn.classList.remove('hidden');
+   
     return endGame(`Player ${currPlayer} won!`);
   }
 
   // check for tie
   // TODO: check if all cells in board are filled; if so call, call endGame
   if (board.every(row => row.every(cell => cell))) {
-    divMessage.innerHTML = 'The game is a draw!';
-    resetBtn.classList.remove('hidden');
     return endGame('The game is a draw!');
   }
 
