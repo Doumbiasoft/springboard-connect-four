@@ -29,7 +29,7 @@ function makeBoard() {
   for (let y = 0; y < HEIGHT /*Rows*/; y++) {
     const newRow = []; // Initialization for each row
     for (let x = 0; x < WIDTH /*Columns*/; x++) {
-      newRow.push(''); //Adding 'x' number of empty colums to each row
+      newRow.push(''); //Adding 'x' number of empty colums to each row to generate the matrix
     }
     board.push(newRow);
   }
@@ -80,9 +80,7 @@ function findSpotForCol(x) {
   // TODO: write the real version of this, rather than always returning 0
 
   for (let y = HEIGHT - 1; y >= 0; y--) {
-    if (!board[y][x]) {
-      return y;
-    }
+    if (!board[y][x]) return y;// checking if this cell is empty and if so return the index 
   }
   return null;
 }
@@ -92,7 +90,7 @@ function findSpotForCol(x) {
 function placeInTable(y, x) {
   // TODO: make a div and insert into correct table cell
 
-  if (!gameOver) {
+  if (!gameOver) {// Checking before placing piece into the board.
     const piece = document.createElement('div');
     piece.classList.add('piece');
     piece.classList.add(`player-${currPlayer}`);
