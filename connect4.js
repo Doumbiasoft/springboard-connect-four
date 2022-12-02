@@ -107,7 +107,7 @@ function endGame(msg) {
    setTimeout(() => {
     divMessage.innerHTML = msg;
     resetBtn.classList.remove('hidden');
-    //alert(msg);
+    alert(msg);
   }, 600);
   //clearTimeout(messageTimer);
 }
