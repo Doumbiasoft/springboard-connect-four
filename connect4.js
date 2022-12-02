@@ -104,7 +104,7 @@ function placeInTable(y, x) {
 
 function endGame(msg) {
   // TODO: pop up alert message
-  const messageTimer = setTimeout(() => {
+   setTimeout(() => {
     divMessage.innerHTML = msg;
     resetBtn.classList.remove('hidden');
     //alert(msg);
